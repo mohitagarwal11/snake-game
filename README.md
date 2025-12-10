@@ -1,8 +1,5 @@
-The classic Snake game, made in C for linux terminal.
-Took like a day for everything to work.
-Really proud of this one!
-Only works on linux, working on windows games soon.
+The classic Snake game, made in C for the Linux terminal. 
+Took me about a day to get everything working and I am honestly proud of how it turned out.
+Currently works on Linux only.
 
-Thank you for checking my project.
-
-:)
+Thanks for checking out my project.
