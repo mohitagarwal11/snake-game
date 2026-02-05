@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="newScript.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <p>
+          Use W A S D or arrow keys for movement. Press Q to stop and R to
+          restart.
+        </p>
+      </header>
+
+      <section class="hud">
+        <div>Score: <span id="score">0</span></div>
+      </section>
+
+      <section class="game">
+        <canvas
+          id="game"
+          width="640"
+          height="480"
+          aria-label="Snake game"
+        ></canvas>
+        <div id="overlay" class="overlay hidden" aria-hidden="true">
+          <div class="overlay-card">
+            <h2>Game Over</h2>
+            <p>Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn" type="button">Restart</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+﻿:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --accent: #22d3ee;
+  --accent-2: #34d399;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --danger: #f87171;
+}
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #1e293b, #0b1020 65%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.page {
+  width: min(920px, 92vw);
+  display: grid;
+  gap: 10px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.hud {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-weight: 600;
+}
+
+.game {
+  position: relative;
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 18px;
+  padding: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.6);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(145deg, #0f172a 0%, #0b1225 100%);
+  border-radius: 12px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 16px;
+  display: grid;
+  place-items: center;
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.overlay-card {
+  background: var(--panel);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 20px 24px;
+  border-radius: 14px;
+  text-align: center;
+  min-width: 220px;
+}
+
+.overlay-card h2 {
+  margin: 0 0 8px 0;
+}
+
+.overlay-card p {
+  margin: 0 0 12px 0;
+  color: var(--muted);
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+  background: var(--accent);
+  color: #0b1020;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent-2);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    flex-direction: column;
+  }
+}
