@@ -1,3 +1,5 @@
+// THIS IS FOR LINUX
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
