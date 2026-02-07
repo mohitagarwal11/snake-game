@@ -98,6 +98,19 @@ canvas {
   color: var(--muted);
 }
 
+.overlay-status {
+  min-height: 1.25rem;
+  font-weight: 700;
+}
+
+.overlay-status.record {
+  color: var(--accent-2);
+}
+
+.overlay-status.info {
+  color: var(--muted);
+}
+
 button {
   border: none;
   border-radius: 10px;
