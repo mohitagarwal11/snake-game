@@ -8,7 +8,7 @@ This project contains two implementations of the popular Snake game:
 
 - **C Version** (`snakeGame.c`): Terminal-based game for Linux/macOS
 - **Web Version** (`index.html`, `script.js`, `style.css`): Modern browser-based game with smooth animations
-
+Link: https://mohitagarwal11.github.io/snake-game/
 ## Features
 
 ### Web Version
